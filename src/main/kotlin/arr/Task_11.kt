@@ -20,12 +20,9 @@ fun main() {
         println("--|--|--")
 
     }
-
     a.forEach { ints ->
-        ints.forEachIndexed() { index, i ->
-            if (index % 2 == 0) print("$i\t")
-        }
-        println()
+
+        println(ints.minOrNull())
     }
 
 }
